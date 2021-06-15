@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear cuenta</title>
+        <!-- fuentes -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <!-- iconos con stiqueta  link-->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" /> -->
+        <!-- normalisacion y estilos -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <!-- <link rel="stylesheet" href="/css/style.css"> -->
+        <link rel="stylesheet" href="/css/indexHeader.css">
+        <link rel="stylesheet" href="/css/indexmain.css">
+        <link rel="stylesheet" href="/css/register.css">
+         <!-- iconos con stiqueta script -->
+         <script src="https://kit.fontawesome.com/b850db4819.js" crossorigin="anonymous"></script>
+    </head>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" alt="" srcset="" class="logo">
+            <span id="busqueda">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <i class="fas fa-search"></i>
+            </span>
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h2>
+        </div>
+        <a href="" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <!-- <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div> -->
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul  class="rigth-navbar">
+                <li>
+                    <a href="register.html"></i>Creá tu cuenta <i class="far fa-address-card"></i></a> 
+                </li>
+                <li>
+                    <a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a> 
+                </li>
+                <li>
+                    <a href="#">Mis compras <i class="fas fa-shopping-basket"></i> </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section id="formularioDeCrearCuenta">
+            <h1>Crear cuenta de usuario</h1>
+            <form action="index.html" method="get" id="formularioRegistro">
+                <div>
+                    <label for="nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="entrada" required>
+                    </label>
+                </div>
+                <div>   
+                    <label for="nickUsuario">
+                        <input type="text" name="nick" id="nick" placeholder="Usuario" class="entrada" required>
+                    </label>
+                </div>
+                <!-- 
+                                patrones para email
+                                ^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+
+                                ^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$
+
+                                ^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$
+
+                                ^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$
+                -->
+                <div>
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="email" class="entrada" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                    </label>
+                </div>
+                <!-- 
+                <div>
+                    <label for="tel">
+                        <input type="tel" name="tel" id="tel" placeholder="1234567890" class="entrada" required maxlength="10">
+                    </label>
+                </div> -->
+                <div>
+                    <label for="fechaNacimiento" class="pesofuente">
+                        Fecha nacimiento
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" required class="entrada">
+                    </label>
+                </div>
+                <div>
+                    <label for="domicilio"  >
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="entrada" required>
+                    </label>
+                </div>
+                <label for="perfil" class="pesofuente">Perfil de usuario</label>
+                <div id="contenido">
+                    <div>    
+                        <label for="perfil">
+                            <input type="radio" name="perfil" id="perfil" class="radioEntrada" >
+                            Comprador
+                        </label>
+                    </div>
+                    <div>
+                        <label for="perfil">
+                            <input type="radio" name="perfil" id="perfil" class="radioEntrada">
+                            Vendedor
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="pesofuente">
+                        Intereces
+                    </label>
+                    <label for="intereces">
+                        <input type="checkbox" name="intereces" value="Electro">
+                        Electro
+                    </label>
+                    <label for="intereces">
+                        <input type="checkbox" name="intereces" value="Moda">
+                        Moda
+                    </label>
+                    <label for="intereces">
+                        <input type="checkbox" name="intereces" value="Hogar">
+                        Hogar
+                    </label>
+                    <label for="intereces">
+                        <input type="checkbox" name="intereces" value="Jugueteria">
+                        Jugueteria
+                    </label>
+                    <label for="intereces">
+                        <input type="checkbox" name="intereces" value="Vida sana">
+                        Vida Sana
+                    </label>
+                </div>
+                <div>
+                    <label for="foto" class="pesofuente">
+                        ingresa tu foto:
+                        <input type="file" name="foto" id="foto" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="pass1" class="pesofuente">
+                        Contraseña 
+                        <input type="password" name="pass1" id="pass1" class="entrada" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="pass2" class="pesofuente">
+                        Confirma contraseña 
+                        <input type="password" name="pass2" id="pass2" class="entrada" required>
+                    </label>
+                </div>
+                <div >
+                    <button type="submit" class="boton_formulario" >Guardar</button>
+                    <button type="reset" class="boton_formulario" >Borrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="seccion">
+            <i class="fas fa-credit-card icono"></i>
+            <h2>Pagá con tarjeta o en efectivo</h2>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section class="seccion">
+            <i class="fas fa-gift icono"></i>
+            <h2>Envío gratis desde $ 2.500</h2>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section class="seccion">
+            <i class="fas fa-user-shield icono"></i>
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </section>
+        <section >
+            <p> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+<body>
+</body>
+</html>

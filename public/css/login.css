@@ -1,0 +1,67 @@
+/* 
+formularios
+https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+
+validacion de formularios
+https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation
+
+*/
+#formularioInicioSesion{
+    width: 40%;
+    margin: auto;
+   
+}
+
+#formularioInicioSesion h1{
+    text-align: center;
+}
+
+.entrada{
+    width: 100%;
+}
+/* #formularioInicio input{
+    width: 100%;
+} */
+
+#formularioInicio{
+    
+    background-color: #ebebeb;
+    border: solid 1px black;
+    opacity: 0.9;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+}
+
+.boton_formulario{
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 450ms;
+}
+
+.boton_formulario:hover{
+    background-color: #0022AA;
+}
+
+
+#formularioInicio label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block; 
+ 
+}
+
+
+#formularioInicio > *{
+    
+    margin: 5px 0;
+}
+

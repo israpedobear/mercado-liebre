@@ -1,0 +1,60 @@
+#formularioDeCrearCuenta{
+    width: 40%;
+    margin: auto;   
+   
+}
+
+#formularioDeCrearCuenta h1{
+    text-align: center;
+    
+}
+
+.pesofuente{
+    font-weight: 600;
+}
+
+
+.entrada{
+    width: 100%;
+}
+
+#contenido{
+    display: flex;
+    justify-content: space-around;
+}
+
+#formularioRegistro{
+    
+    background-color: #ebebeb;
+    border: solid 1px black;
+    opacity: 0.9;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+}
+
+.boton_formulario{
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#formularioRegistro label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block; 
+ 
+}
+
+
+#formularioRegistro > *{
+    
+    margin: 5px 0;
+}
+

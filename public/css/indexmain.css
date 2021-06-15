@@ -1,0 +1,188 @@
+/* 
+Paleta de colores a usar 
+
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+
+Tipografías
+    https://fonts.google.com/
+    Familia: 'Roboto'
+
+Tamaños Tipográficos
+
+    Cuerpos de texto: 12px
+    Titulares (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+
+
+Íconos
+
+    el departamento de diseño usó los íconos de este sitio:
+    https://fontawesome.com/icons?d=gallery&m=free
+
+*/
+/* ------------------------------------estilos generales-------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
+}
+img{
+    max-width: 100%;
+}
+/* ------------------------------------estilos generales-------------------------------------------- */
+
+/* ------------------------------------estilos main--------------------------------------------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  #ebebeb;
+}
+
+.principal{
+    padding: 10px;
+    width: 90vw;
+    margin: auto;
+}
+
+
+.articulo{
+    margin: 0 0 10px;
+    background-color: white;
+
+}
+.descuento{
+    color: #39b54a;
+}
+
+
+main section article i{
+    color: #39b54a;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    /* position: absolute;
+    right: 50px;   
+     top:-15px; */
+
+}
+
+.descripcionProducto{
+    background-color: white;
+    border-top: solid 1px  #ebebeb;
+    padding: 20px;
+}
+.titulares{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    width: 70%;
+}
+
+.descripcion{
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* ------------------------------------estilos main - -------------------------------------------------*/
+
+/* ------------------------------------estilos footer -------------------------------------------------*/
+.seccion{
+    text-align: center;
+    padding: 30px;
+}
+
+.icono{
+    color: #1259c3;
+    font-size:  2em;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/* ------------------------------------estilos footer -------------------------------------------------*/
+
+/* la practica dice 
+
+Solo en el caso mobile la descripción del artículo no se visualizará.
+● Agregar box-shadow. Para los dispositivos tablet o de resoluciones superiores,
+*/
+/* tamaño tablets */
+@media(min-width: 361px){
+   
+    #barraNavegacion{
+        display: none;
+    }
+    .articulo{
+        /* checar https://www.cssmatic.com/box-shadow  */
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    
+    .descripcionProducto{
+        display: flex;flex-wrap: wrap;
+    }
+
+    .envio{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 40px;
+
+    }
+}
+
+/* tamaño escritorio */
+@media(min-width: 769px){
+    
+    #articulosOfertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .articulo{
+        width: 20%;
+        margin: 8px;
+    }
+
+    .envio{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #barraNavegacion{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    
+    
+}
+
+@media(min-width: 925px){
+
+    .articulo{
+        width: 25%;
+    }
+}
